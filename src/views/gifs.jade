@@ -1,0 +1,21 @@
+extends layout 
+
+block content 
+  include includes/header
+  div.column-center
+    img(src="" + data.data.image_original_url, class="center")
+  div.container2
+    div.column-left
+      a(href="/gifs")
+        input(type="image", src="/img/Nope.png", class="button button-heart button-light container-left")
+      //- img(src="/img/Nope.png", class = "container1", class="container-left")
+    div.column-right  
+      form(method="POST", id='form-1', action="likeGif", class="light-theme")
+        .container-fluid
+          //- .form-header
+            //- p.lead Sign up
+          p= error
+          //- .form-group
+          input(type="hidden", name="link", value="" + data.data.image_original_url)
+          //- .form-group
+          input(type="image",src="/img/Like.png", id='likeButton', value="submit", name="submit", class="button button-heart button-light")

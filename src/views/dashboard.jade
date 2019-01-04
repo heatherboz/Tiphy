@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	include includes/header
+	.section.settings.light-theme
+		.container
+			form(method="POST", action="/" + user.username, class="form")
+				h2 Settings
+				// ACCOUNT SETTINGS
+				.settings-section
+					h4 Account
+					.form-group
+						label Username
+						input(type="text", name="username", placeholder=user.username)
+
+					.form-group
+						label Email
+						input(type="text", name="email", placeholder=user.email)
+					.form-group
+						input(type="submit", value="submit", name="submit", class="button button-default button-dark save")
+
+				// DELETE ACCOUNT 
+				.settings-section
+					.success
+					a(href="/")
+						span(data-id= user.username, class="button button-default button-dark button-danger delete") Delete account
