@@ -1,0 +1,91 @@
+extends layout
+
+block content
+	- var menu = 'index'
+	include includes/header
+	.page-header.bg.home-img.light-theme
+		.container.text-center
+			//div.img-overlay
+			div.col-sm-10.col-sm-offset-1
+				h1.thin= appTitle
+				p.description 
+
+	//- .section
+		//- .container
+		//- 	.col-sm-4
+		//- 		- for (var i = 0; i < posts.length; i++)
+		//- 			if (i%3 === 0)
+		//- 				div
+		//- 					.post
+		//- 						.post-primary-content
+		//- 							.post-avatar.dark-theme
+		//- 								img(src= posts[i].author.avatar || "img/avatar-black.png")
+		//- 							h5= posts[i].author.username
+		//- 							p.post-text= posts[i].text
+		//- 						if posts[i].media === "photo"
+		//- 							.post-photo
+		//- 								img(src="img/photo.jpg")
+		//- 						if posts[i].media === "video"
+		//- 							.post-photo
+		//- 								img(src="img/video.jpg")
+		//- 						.post-footer
+		//- 							.text-right
+		//- 								span.fa.fa-reply
+		//- 								span.fa.fa-heart-o
+		//- 								span.fa.fa-ellipsis-h
+		//- 	.col-sm-4
+		//- 		- for (var i = 0; i < posts.length; i++)
+		//- 			if (i === 1 || i%3 == 1)
+		//- 				div
+		//- 					.post
+		//- 						.post-primary-content
+		//- 							.post-avatar.dark-theme
+		//- 								img(src= posts[i].author.avatar || "img/avatar-black.png")
+		//- 							h5= posts[i].author.username
+		//- 							p.post-text= posts[i].text
+		//- 						if posts[i].media === "photo"
+		//- 							.post-photo
+		//- 								img(src="img/photo.jpg")
+		//- 						if posts[i].media === "video"
+		//- 							.post-photo
+		//- 								img(src="img/video.jpg")
+		//- 						.post-footer
+		//- 							.text-right
+		//- 								span.fa.fa-reply
+		//- 								span.fa.fa-heart-o
+		//- 								span.fa.fa-ellipsis-h
+			//- .col-sm-4
+			//- 	- for (var i = 0; i < posts.length; i++)
+			//- 		if (i === 2 || i%3 === 2)
+			//- 			div
+			//- 				.post
+			//- 					.post-primary-content
+			//- 						.post-avatar.dark-theme
+			//- 							img(src= posts[i].author.avatar || "img/avatar-black.png")
+			//- 						h5= posts[i].author.username
+			//- 						p.post-text= posts[i].text
+			//- 					if posts[i].media === "photo"
+			//- 						.post-photo
+			//- 							img(src="img/photo.jpg")
+			//- 					if posts[i].media === "video"
+			//- 						.post-photo
+			//- 							img(src="img/video.jpg")
+			//- 					.post-footer
+			//- 						.text-right
+			//- 							span.fa.fa-reply
+			//- 							span.fa.fa-heart-o
+			//- 							span.fa.fa-ellipsis-h
+			//- 
+	div(class='fullwidth')
+		h2 Top Five Cutest Gifs
+		ul
+		- for (var i = 1; i<6; i++){
+			li 
+				img(src="" + topfive[i-1]['link'], class = 'card' + i)
+		- }
+	div(class='about', class='blue-theme')
+		h2 About
+		p2 Tiphy was inspired by the dating app, Tinder, and cute gifs. We decided to combine the two so that you can rate gifs and find like-minded individuals who share your taste in gifs!	 Feel free to make an account, rate gifs on cute or not, find your soulmate on the profile page and view your favourite gifs! P.S cutest pics on the site posted above!
+	//- each gif in topfive
+	//- 	li
+	//- 		img(src="" + gif['link'], class='center', class = 'card' + i)

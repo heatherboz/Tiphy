@@ -1,0 +1,22 @@
+header(class='menu menu-horizontal menu-top menu-thin light-theme affix')
+	.container
+		ul.nav-left
+			li: a(href="/") 
+						h4 Tiphy
+		ul.nav-right
+			if (admin)
+				li: a(href="/gifs") Gifs
+				li.dropdown
+					a(id="dLabel" class="dropdown-toggle" data-toggle="dropdown" href="#") 
+						//span.fa.fa-user.fa-2x.menu-avatar
+						img(src= user.avatar class="menu-avatar")
+						span(class="fa fa-chevron-down")
+					ul.dropdown-menu.light-theme
+						li.dropdown-header= 'Signed in as ' + user.username 
+						li(role="separator" class="divider")
+						li: a(href="/" + user.username) View profile
+						li: a(href="/dashboard") Settings
+						li: a(href="/logout") Log out
+			else
+				li: a(href="/login") Log in
+				li: a(class="button button-default button-sm button-light-o", href="/signup") Sign up

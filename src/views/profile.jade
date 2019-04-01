@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	include includes/header
+	.page-header.text-center.bg.blue-theme
+		.container
+			- console.log(profile.likes);
+			h1.light=profile.username
+			-if(match != null)
+				h4= "Your match is " + match.username + "!"
+				h4= "Their email is " + match.email
+			-else
+				h4="You don't have a match yet, keep swiping!"
+	.section
+		.container
+			.col-sm-6.col-sm-offset-3
+				- for (var i = 0; i < profile.likes.length; i++){
+						img(src="" + profile.likes[i], class = 'likes')
+				- }		

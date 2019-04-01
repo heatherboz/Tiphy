@@ -1,0 +1,275 @@
+/* =========================
+	SETTINGS
+============================== */
+.settings h4 {
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #697074;
+
+}
+
+.btn-change-photo {
+	color: #b5bdc1;
+	border: 1px solid #b5bdc1;
+	padding: .2em 0;
+	width: 6em;
+}
+
+.settings .photo {
+	width: 6em;
+}
+
+.settings .photo img {
+	width: 100%;
+}
+.settings-avatar {
+	display: inline;
+	float: left;
+}
+
+.settings-section {
+	text-align: left;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	border-bottom: 1px solid #b5bdc1;
+}
+
+.settings-section:last-child {
+	border-bottom: none;
+}
+
+/* =================================
+	TOGGLES
+==================================== */
+.toggle input {
+	display:none;
+}
+
+.toggle {
+	display: block;
+	margin-bottom: 1.5em;
+}
+.switch-bg  {
+	display: inline-block;/*important*/
+	position: relative;/*important*/
+	padding: 2px;
+	width: 5em;
+	height: 2.5em;
+	vertical-align: middle;
+	background-color: #b5bdc1;
+	border-radius:3em;
+	cursor: pointer;
+	transition: background-color .5s ease;
+}
+
+.switch-toggler {
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 100%;
+	height: 2.5em;
+	width: 2.5em;
+	top: 0;
+	left: 0;
+	position: absolute;
+	transition: left .5s ease;
+}
+
+.switch-input:checked + label span {
+	left: 2.5em;
+}
+
+.switch-input:checked + label {
+	background-color: #00b286;
+}
+
+
+.radio-bg {
+	display: inline-block;/*important*/
+	position: relative;/*important*/
+	border: 2px solid #b5bdc1;
+	cursor: pointer;
+	border-radius: 100%;
+	}
+
+.radio-toggler {
+	visibility: hidden;
+	font-size: 2em;
+	color: #00b286;
+	padding: 1px 3px;
+}
+
+.radio-input:checked + label span {
+	visibility: visible;
+}
+
+.checkbox-bg {
+	display: inline-block;/*important*/
+	position: relative;/*important*/
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+.checkbox-toggler {
+	visibility: hidden;
+	color: #00b286;
+	padding: .25em;
+}
+
+.checkbox-input:checked + label span {
+	visibility: visible;
+}
+
+.button-danger {
+	color: #fff;
+	background-color: #e31837;
+	border: 2px solid #e31837;
+}
+
+/* =================================
+	MENU
+==================================== */
+
+.menu-avatar {
+	height: 2.5em;
+	border-radius: 2px;
+	margin-right: .5em;
+}
+
+.dropdown ul li{
+	margin: 0;
+	line-height: 100%;
+	display: block;
+	color: #697074;
+}
+
+.dropdown-menu {
+	left: -100px;
+	min-width: 100px;
+}
+ul.dropdown-menu{
+	padding: 1em 0;
+}
+
+.dropdown-menu.light-theme li a{
+	color: #697074;
+}
+
+/* =================================
+	IMAGES
+==================================== */
+.crowd-img {
+	background-image: url('../img/crowd.jpeg');
+}
+
+.thumb {
+	border-radius: 2px;
+	width: 300px;
+	height: 300px;
+}
+
+.home-img {
+	background-image: url('../img/giphy.gif');
+}
+
+.timber-gradient {
+
+  background: -webkit-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #fc00ff 10%, #00dbde 90%); /* W3C */
+
+}
+
+.compose .modal-footer {
+	border: 0;
+	padding-top: 0;
+}
+
+.compose textarea {
+	resize: none;
+}
+
+/* =========================
+	POST
+============================== */
+
+.post{
+	border: 1px solid #b5bdc1;
+	border-radius: 4px;
+	margin-bottom: 24px;
+}
+
+.post h5 {
+	display: inline-block;
+	margin: 0;
+}
+
+.post-avatar {
+	display: block;
+	float: left;
+	width: 3em;
+	height: 3em;
+	margin-right: 1em;
+	border-radius: 4px;
+}
+
+.post-avatar img {
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.post-primary-content {
+	padding: 1em 1em 0 1em;
+}
+
+.post-footer {
+	margin: 1em;
+	color: #b5bdc1;
+}
+
+.post-footer span {
+	margin: 0 .5em;
+}
+
+.post img {
+	width: 100%;
+}
+.post-toggle {
+	display: block;
+	padding: 0 1em 1em 1em;
+	cursor: pointer;
+	color: #b5bdc1;
+	font-size: 12px;
+}
+
+.post-toggle span {
+	display: inline;
+}
+
+.post-replies {
+	display: none;
+}
+.post-reply-message {
+	background-color: #f4f5f7;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #b5bdc1;
+}
+
+.post-reply-message:first-child {
+	border-top: 1px solid #b5bdc1;
+}
+
+.post-send-reply {
+	padding: 5% 0;
+}
+
+.post-send-reply input {
+	margin: 0 auto;
+	padding: 2.5%;
+	font-size: 1em;
+	width: 100%;
+	border: 1px solid #b5bdc1;
+	border-radius: 4px;
+}
